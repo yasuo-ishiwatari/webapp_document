@@ -1,0 +1,311 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 1400px;
+    height: 90vh;
+}
+
+form {
+    display: flex;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.input_area {
+    height: 800px;
+    width: 500px;
+}
+
+.input_title {
+    height: 50px;
+    width: 100%;    
+}
+
+.each_input {
+    height: 60px;
+    width: 450px;
+    margin-left: 20px;
+}
+
+.each_input label {
+    width: 200px;
+    display: inline-block;
+    line-height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.each_input input {
+    width: 200px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.radioA_each_input {
+    height: 230px;
+    width: 300px;
+    margin-left: 20px;
+    align-items: start;
+}
+
+.radio_area {
+    height: 60px;
+    width: 250px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.radio_area:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.radio_area input {
+    height: 25px;
+    width: 25px;
+}
+
+.radio_area label {
+    height: 60px;
+    width: 180px;
+    padding-left: 5px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.radioB_each_input {
+    height: 90px;
+    width: 450px;
+    margin-left: 20px;
+    display: flex;
+    align-items: start;
+}
+
+.radioB_each_input .radio_area {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.checkbox_each_input {
+    height: 60px;
+    width: 450px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox_each_input input {
+    height: 25px;
+    width: 25px;
+}
+
+.checkbox_each_input label {
+    padding: 0px 20px 0px 10px;
+}
+
+.file_each_input {
+    height: 60px;
+    width: 450px;
+    margin-left: 20px;
+}
+
+.file_each_input input {
+    width: 100%;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.submit_each_input {
+    height: 60px;
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.submit_each_input input {
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: rgb(219, 168, 91);
+    border-radius: 5px;
+}
+
+.image_each_input {
+    height: 60px;
+    width: 100px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.image_each_input input {
+    height: 40px;
+    background-color: rgb(231, 143, 11);
+}
+
+.button_each_input {
+    height: 60px;
+    width: 200px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.button_each_input input {
+    height: 40px;
+    width:  40px;
+    background-color: brown;
+    color: white;
+    border-radius: 50%;
+}
+
+.input_area2 {
+    height: 800px;
+    width: 500px;
+    margin-left: 10px;
+}
+
+.date_each_input {
+    height: 60px;
+    width: 200px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.date_each_input input {
+    font-size: 20px;
+} 
+
+.email_each_input {
+    height: 60px;
+    width: 450px;
+    margin-left: 20px;
+}
+
+.email_each_input label {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.email_each_input input {
+    font-size: 18px;
+    width: 280px;
+    padding: 0px 0px 0px 10px;
+}
+
+.number_each_input {
+    height: 60px;
+    width: 450px;
+    margin-left: 20px;
+}
+
+.number_each_input label {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.number_each_input input {
+    font-size: 20px;
+    width: 100px;
+    padding: 0px 0px 0px 10px;
+}
+
+.range_each_input {
+    height: 60px;
+    width: 450px;
+    margin-left: 20px;
+}
+
+.range_each_input label {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.range_each_input span {
+    padding: 0px 0px 0px 5px;
+}
+
+.range_each_input span::before {
+    content: "[";
+}
+
+.range_each_input span::after {
+    content: "]";
+}
+
+.other_form {
+    height: 800px;
+    width: 400px;
+    margin-left: 10px;
+}
+
+.text_area {
+    height: 250px;
+    width: 350px;
+    margin-left: 20px;
+}
+
+.text_area textarea {
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    background-color: aquamarine;
+    resize: none;
+}
+
+.select_area {
+    height: 60px;
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.select_area p {
+    font-size: 20px;
+}
+
+.select_area select {
+    height: 40px;
+    width: 120px;
+    margin-left: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+.button_area {
+    height: 60px;
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button_area button {
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+
+}
+
+.submit_btn {
+    background-color: rgb(88, 4, 21);
+    color: bisque;
+}
+
+.button_btn {
+    background-color: rgb(244, 250, 155);
+    color: #042e50;
+    border-radius: 10px;
+}

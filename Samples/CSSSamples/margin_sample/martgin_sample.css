@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 150vh;
+    width: 100vw;
+}
+
+.base {
+    height: 100px;
+    width: 100px;
+    color: lightyellow;
+}
+
+.box1 {
+    background-color: red;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.box2 {
+    background-color: green;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.box3 {
+    background-color: blue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.base2 {
+    color: lightyellow;
+}
+
+.content1 {
+    background-color: red;
+    /* margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block; */
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.content2 {
+    background-color: green;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.content3 {
+    background-color: blue;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    background-color: #ccc;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frame .base {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inbox1 {
+    background-color: brown;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.inbox2 {
+    background-color: purple;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.inbox3 {
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

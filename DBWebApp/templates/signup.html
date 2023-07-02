@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/signup.css">
+
+    <title>会員管理アプリ</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title_area flex_area"> 
+                <p class="title_text">アカウント作成</p>
+            </div>
+        </header>
+        <main>
+            <form action="" method="POST">
+                <div class="input_area">
+                    <div class="each_input flex_area username">
+                        <input type="text" id="username" name="username" value="ユーザー名">
+                    </div>
+                    <div class="each_input flex_area password">
+                        <input type="text" id="password" name="password" value="パスワード">
+                    </div>
+                    <div class="comment_area">
+                        <p>※英数字8～16文字</p>
+                    </div>
+                    <div class="each_input flex_area password_conf">
+                        <input type="text" id="password_conf" name="password_conf" value="パスワード確認">
+                    </div>
+                </div>
+                <div class="btn_area">
+                    <div class="each_btn1 flex_area">
+                        <div class="signup">
+                            <button type="submit">アカウント作成</button>
+                        </div>
+                    </div>
+                    <div class="each_btn2"></div>
+                    <div class="each_btn3 flex_area">
+                        <p ><a class="button_text return" href="/returnlogin">戻る</a></p>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <script>
+            const username = document.getElementById("username");
+            const password = document.getElementById("password");
+            const password_conf = document.getElementById("password_conf");
+            var username_chabged = false;
+            var password_changed = false;
+            var password_conf_changed = false;
+            username.onfocus = function()
+            {
+                
+                if (username_chabged == false)
+                {
+                    username.value = "";
+                    username.classList.toggle("next");
+                    username_chabged = true;
+                }        
+            }
+            password.onfocus = function()
+            {
+                if (password_changed == false)
+                {
+                    password.type = "password"
+                    password.value = ""
+                    password.classList.toggle("next")
+                    password_changed = true;
+                }    
+            }
+            password_conf.onfocus = function()
+            {
+                if (password_conf_changed == false)
+                {
+                    password_conf.type = "password"
+                    password_conf.value = ""
+                    password_conf.classList.toggle("next")
+                    password_conf_changed = true;
+                }    
+            }
+        </script>
+    </div>
+</body>
+</html>

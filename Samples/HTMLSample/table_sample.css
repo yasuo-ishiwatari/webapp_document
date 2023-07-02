@@ -1,0 +1,74 @@
+header {
+    height: 50px;
+    width: 1200px;
+    position: fixed;
+}
+
+.title {
+    height: 100px;
+    width: 100%;
+    margin: 50px auto 50px 100px;
+    padding-top: 50px;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+
+.title h1 {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: blue;
+    color: rgb(168, 241, 126);
+    border-radius: 10px;
+}
+
+main {
+    padding-top: 150px;
+}
+
+section {
+    height: 1200px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 100px;
+    /* background-color: rgb(102, 240, 114); */
+    font-size: 20px;
+}
+
+table {
+    border: 3px solid #000;
+}
+
+.item1 {
+    width: 100px;
+}
+
+.item2 {
+    width: 100px;
+}
+
+.item3 {
+    width: 100px;
+}
+
+.item4 {
+    width: 100px;
+}
+
+.item5 {
+    width: 400px;
+}
+
+th {
+    border: 1px solid #000;
+    background-color: rgb(102, 240, 114);
+}
+
+td {
+    height: 100px;
+    border: 1px solid #000;
+}

@@ -1,0 +1,396 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+ main {
+    height: 1400px;
+    width: 1200px;
+    margin: 0px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #ddd;
+ }
+
+ .box {
+    height: 50px;
+    width: 120px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+section {
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+ .box1 {
+    border: 3px solid black;
+ }
+
+ .box2 {
+    border: 5px dashed brown;
+ }
+
+ .box3 {
+    border: 10px dotted green;
+ }
+
+ .box4 {
+    border: 10px double red
+ }
+
+ .box5 {
+    border: 10px groove purple;
+ }
+
+ .box6 {
+    border: 10px ridge purple;
+ }
+
+.box7 {
+    border-top: 3px solid black;
+}
+
+.box8 {
+    border-bottom: 5px dashed brown;
+}
+
+.box9 {
+    border-left: 10px dotted green;
+ }
+
+ .box10 {
+    border-right: 10px double red;
+ }
+
+ .box11 {
+    margin-left: 40px;
+    border: 10px solid black;
+    box-sizing: border-box;
+ }
+
+ .box12 {
+    border: 10px solid black;
+    box-sizing: content-box;
+ }
+
+ .box13 {
+    border: 3px solid black;
+}
+
+ .box14 {
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+ .box15 {
+    border: 3px solid black;
+    border-radius: 20%;
+ }
+
+ .box16 {
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+/* https://icon-rainbow.com/ */
+
+.image {
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.box17 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+     /* background-repeat: no-repeat; */
+}
+
+.box18 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+}
+
+.box19 {
+    height: 120px;
+    width: 50px;
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    /* background-repeat: no-repeat; */
+}
+
+.box20 {
+    height: 120px;
+    width: 50px;
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+}
+
+.box21 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box22 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box23 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-size: 150px;
+}
+
+.box24 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-size: 50px;
+}
+
+.box25 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-size: 100px;
+    /* background-position: center; */
+}
+
+.box26 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-size: 100px;
+    background-position: center;
+}
+
+.box27 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-size: 100px;
+    background-position: top;
+}
+
+
+.box28 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-size: 100px;
+    background-position: right;
+}
+
+.box29 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-size: 100px;
+    background-position: bottom;
+}
+
+.box30 {
+    border: 1px solid #000;
+    background-image: url("../../img/setting.svg");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    background-size: 100px;
+    background-position: left;
+}
+
+.string {
+    /* height: 300px; */
+}
+
+.string h3 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid #000;
+    background-color: blue;
+    color:lightblue;
+}
+
+.string h2 {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 40px;
+    font-weight: 600;
+    border: 1px solid #000;
+    background-color: lightpink;
+    color: red;
+}
+
+.p1 {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #000;
+}
+
+.p2 {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.string_pos {
+    height: 200px;
+}
+
+.str_pos {
+    height: 100px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 20px;
+    border: 1px solid #000;
+}
+
+.str_pos_Center {
+    height: 100px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 100px;
+}
+
+.str_pos_Left {
+    height: 100px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    text-align:left;
+    line-height: 16px;
+}
+
+.str_pos_Right {
+    height: 100px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    text-align: right;
+    line-height: 184px;
+}
+
+.default, .cancel{
+    height: 80px;
+    width: 150px;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+.cancel li {
+    list-style:none;
+}
+
+.cancel a {
+    text-decoration:none ;
+}
+
+.zindex {
+    height: 250px;
+    position: relative;
+    display: block;
+}
+
+.zindexbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+
+.first {
+    top: 100px;
+    left: 100px;
+    background-color: brown;
+}
+
+.second {
+    top: 50px;
+    left: 120px;
+    background-color: green;
+}
+
+.third {
+    top: 90px;
+    left: 170px;
+    background-color: blue;    
+}
+
+.first2 {
+    top: 100px;
+    left: 400px;
+    background-color: brown;
+    z-index: 1;
+}
+
+.second2 {
+    top: 50px;
+    left: 420px;
+    background-color: green;
+}
+
+.third2 {
+    top: 90px;
+    left: 470px;
+    background-color: blue;    
+}
+
+.first3 {
+    top: 100px;
+    left: 700px;
+    background-color: brown;
+    z-index: 1;
+}
+
+.second3 {
+    top: 50px;
+    left: 720px;
+    background-color: green;
+    z-index: 2;
+}
+
+.third3 {
+    top: 90px;
+    left: 770px;
+    background-color: blue;    
+}

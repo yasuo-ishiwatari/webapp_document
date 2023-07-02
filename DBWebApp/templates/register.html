@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../static/reset.css"> -->
+    <link rel="stylesheet" href="../static/register.css">
+
+    <title>会員管理アプリ</title>
+</head>
+<body>
+    <div class="msgcont">
+        <p id="errmsg">{{errmsg}}</p>
+        <!-- <p id="errmsgon">ON</p> -->
+    </div>
+    <dialog id="exDialog">
+        <p>{{errmsg}}</p>
+        <p><button class="closeButton" type="button" id="closeButton">OK</button></p>
+    </dialog>
+    <div class="container">
+        <header>
+            <div class="title_area flex_area">
+                <p class="title_text">新規会員登録</p>
+            </div>
+        </header>
+        <main>
+            <form action="" method="POST">
+                <div class="name_area flex_area">
+                    <div class="name_title_area">
+                        <p>お名前</p>
+                    </div>
+                    <div class="name_input_area">
+                        <input type="text" id="familyname" name="familyname" value={{register_info.fname}}>
+                    </div>
+                    <div class="name_input_area">
+                        <input type="text" id="givenname" name="givenname" value={{register_info.gname}}>
+                    </div>
+                </div>
+                <div class="birthday_area flex_area">
+                    <div class="birthday_title_area">
+                        <p>生年月日</p>
+                    </div>
+                    <div class="birthday_year_area">
+                        <select class="year_select" name="year" id="year">
+                            <option selected>{{register_info.year}}</option>
+                            {% for yy in BirthYear %}
+                            <option>{{yy}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="birthday_str_area">
+                        <p>/</p>
+                    </div>
+                    <div class="birthday_month_area">
+                        <select class="month_select" name="month" id="month">
+                            <option selected>{{register_info.month}}</option>
+                            {% for mm in BirthMonth %}
+                            <option>{{mm}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="birthday_str_area">
+                        <p>/</p>
+                    </div>
+                    <div class="birthday_day_area">
+                        <select class="day_select" name="day" id="day">
+                            <option selected>{{register_info.day}}</option>
+                            {% for dd in BirthDay %}
+                            <option>{{dd}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>      
+                </div>    
+                <div class="gender_area flex_area">
+                    <div class="gender_title_area">
+                        <p>性別</p>
+                    </div>
+                    <div class="gender_male_area">
+                        {% if register_info.gender == "male" %}
+                        <input class="gender_input" type="radio" name="gender" checked value="male">
+                        {% else %}
+                        <input class="gender_input" type="radio" name="gender" value="male">
+                        {% endif %}
+                        <label class="gender_label" for="">男性</label>
+                    </div>
+                    <div class="gender_female_area">
+                        {% if register_info.gender == "female" %}
+                        <input class="gender_input" type="radio" name="gender" checked value="female">
+                        {% else %}
+                        <input class="gender_input" type="radio" name="gender" value="female">
+                        {% endif %}
+                        <label class="gender_label" for="">女性</label>
+                    </div>
+                </div>
+                <div class="address_area flex_area">
+                    <div class="address_title_area">
+                        <p>住所(都道府県)</p>                        
+                    </div>
+                    <div class="address_prefect_area">
+                        <select class="addess_select" name="address" id="address">>
+                        <option selected>{{register_info.address}}</option>
+                        {% for aa in Prefect %}
+                        <option>{{aa}}</option>
+                        {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="register_area flex_area">
+                    <button class="submit_btn" type="submit">登録</button>
+                </div>
+            </form>
+        </main>
+        <script>
+            const familyname = document.getElementById("familyname");
+            const givenname = document.getElementById("givenname");
+            const errmsg = document.getElementById("errmsg").textContent;
+            const exDialog = document.getElementById('exDialog')
+            const closeButton = document.getElementById('closeButton');
+            var familyname_chabged = false;
+            var givenname_changed = false;
+            
+            window.onload=function()
+            {
+                console.log(errmsg)
+                if (errmsg != "") {
+                    exDialog.showModal();
+                }       
+            }
+
+            familyname.onfocus = function()
+            {
+                if (familyname_chabged == false)
+                {
+                    familyname.value = "";
+                    familyname.classList.toggle("next");
+                    familyname_chabged = true;
+                }        
+            }
+            givenname.onfocus = function()
+            {
+                if (givenname_changed == false)
+                {
+                    givenname.value = ""
+                    givenname.classList.toggle("next")
+                    givenname_changed = true;
+                }    
+            }
+            closeButton.addEventListener('click', function() {
+                exDialog.close();
+            });
+
+        </script>
+    </div>
+</body>
+</html>

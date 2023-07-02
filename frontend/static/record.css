@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex_area {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header {
+    height: 195px;
+    width: 100%;
+    position: fixed;
+}
+
+.title_area {
+    height: 40px;
+    border: 3px solid green;
+    background: lightgoldenrodyellow;;
+}
+
+.title_area p {
+    margin-left: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+}
+
+.date_area {
+    width: 305px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.year {
+    width: 60px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.month {
+    width: 30px;
+    font-size: 18px;    
+    margin-left: 5px;
+}
+
+.day {
+    width: 30px;
+    font-size: 18px;    
+    margin-left: 5px;
+}
+
+.range {
+    width: 30px;
+    height: 30px;
+}
+
+.range p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.button_area {
+    height: 100%;    
+    width: 400px;
+    margin-left: 10px;
+}
+
+.harf_area {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(145, 145, 238);
+}
+
+.all_date_area {
+    width: 455px;
+    margin-left: 50px;
+    height: 100%;
+}
+
+.gender_area {
+    width: 280px;
+    margin-left: 30px;
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.gender_type {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.right_side {
+    justify-content: right;
+}
+
+.button_text {
+    display: block;
+    height: 30px;
+    width: 120px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(199, 172, 241);
+    border-radius: 5px;
+}
+
+.button_text:hover {
+    background: gray;
+}
+
+.birth_date {
+    width: 455px;
+    margin-left: 50px;
+    height: 100%;
+}
+
+.address_area {
+    height: 100%;
+    width: 280px;
+    margin-left: 30px;
+}
+
+.address {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 18px;   
+}
+
+button {
+    height: 30px;
+    margin-top: 10px;
+    width:  150px;
+    margin-left: 30px;
+    background-color: rgb(199, 172, 241);
+    font-size: 18px;
+}
+
+.table_header_area {
+    width: 850px;
+    height: 30px;
+    background-color: darksalmon;
+}
+
+/* ================================================================================== */
+
+main {
+    padding-top: 195px;
+    width: 100%;
+    background-color: lightyellow;
+}
+
+th {
+    padding-left: 2px;
+}
+
+td {
+    padding-left: 5px;
+}
+
+.number_col {
+    width: 100px;
+}
+
+.uname_col {
+    width: 150px;
+}
+
+.registerd_col {
+    width: 120px;
+}
+
+.name_col {
+    width: 120px;
+}
+
+.birthday_col {
+    width: 120px;
+}
+
+.gender_col {
+    width: 100px;
+}
+
+.address_col {
+    width: 120px;
+}
+
+.table_body:nth-of-type(even) > * {
+    background-color: #300505;
+    color: #dbdfd1;
+}
+
+.table_body:nth-of-type(odd) > * {
+    background-color: #151a15;
+    color: #dbdfd1;;
+}

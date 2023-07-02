@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/record.css">
+
+    <title>会員管理アプリ</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title_area">
+                <p>会　員　情　報　テ　－　ブ　ル</p>
+            </div>
+            <form action="" method="POST">
+                <div class="upper_area harf_area flex_area">
+                    <div class="all_date_area flex_area">
+                        <div class="title">
+                            <p>登録日</p>
+                        </div>
+                        <div class="date_enable">
+                            {% if record_condition.registerd == "ON" %}
+                            <input type="checkbox" name="registerd_enable" checked>
+                            {% else %}
+                            <input type="checkbox" name="registerd_enable">
+                            {% endif %}
+                        </div>
+                        <div class="date_area flex_area">
+                            <div>
+                                <input class="year" type="text" name="registerd_year_start" id="" value={{record_condition.registerd_year_start}}>
+                            </div>
+                            <div>
+                                <input class="month" type="text" name="registerd_month_start" id="" value={{record_condition.registerd_month_start}}>
+                            </div>    
+                            <div>
+                                <input class="day" type="text" name="registerd_day_start" id="" value={{record_condition.registerd_day_start}}>
+                            </div>
+                            <div class="range">
+                                <p>～</p>
+                            </div>
+                            <div>
+                                <input class="year" type="text" name="registerd_year_end" id="" value={{record_condition.registerd_year_end}}>
+                            </div>
+                            <div>
+                                <input class="month" type="text" name="registerd_month_end" id="" value={{record_condition.registerd_month_end}}>
+                            </div>    
+                            <div>
+                                <input class="day" type="text" name="registerd_day_end" id="" value={{record_condition.registerd_day_end}}>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gender_area flex_area">
+                        <div class="title">
+                            <p>性別</p>
+                        </div>
+                        <div class="gender_type">
+                            <p>男性</p>
+                        </div>
+                        <div class="date_enable">
+                            {% if record_condition.male == "ON" %}
+                            <input type="checkbox" name="male" checked>
+                            {% else %}
+                            <input type="checkbox" name="male">
+                            {% endif %}
+                        </div>
+                        <div class="gender_type">
+                            <p>女性</p>
+                        </div>
+                        <div class="date_enable">
+                            {% if record_condition.female == "ON" %}
+                            <input type="checkbox" name="female" checked>
+                            {% else %}
+                            <input type="checkbox" name="female">
+                            {% endif %}
+                        </div>                       
+                    </div>
+                    <div class="button_area flex_area right_side">
+                        <div class="button_frame">
+                            <p><a class="button_text" href="/logout_admin">ログアウト</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower_area harf_area flex_area">
+                    <div class="all_date_area flex_area">
+                        <div class="title">
+                            <p>生年月日</p>
+                        </div>
+                        <div class="date_enable">
+                            {% if record_condition.birth == "ON" %}
+                            <input type="checkbox" name="birth_enable" checked>
+                            {% else %}
+                            <input type="checkbox" name="birth_enable">
+                            {% endif %}
+                        </div>
+                        <div class="date_area flex_area">
+                            <div>
+                                <input class="year" type="text" name="birth_year_start" id="" value={{record_condition.birth_year_start}}>
+                            </div>
+                            <div>
+                                <input class="month" type="text" name="birth_month_start" id="" value={{record_condition.birth_month_start}}>
+                            </div>    
+                            <div>
+                                <input class="day" type="text" name="birth_day_start" id="" value={{record_condition.birth_day_start}}>
+                            </div>
+                            <div class="range">
+                                <p>～</p>
+                            </div>
+                            <div>
+                                <input class="year" type="text" name="birth_year_end" id="" value={{record_condition.birth_year_end}}>
+                            </div>
+                            <div>
+                                <input class="month" type="text" name="birth_month_end" id="" value={{record_condition.birth_month_end}}>
+                            </div>    
+                            <div>
+                                <input class="day" type="text" name="birth_day_end" id="" value={{record_condition.birth_day_end}}>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address_area flex_area">
+                        <div class="title">
+                            <p>住所</p>
+                        </div>
+                        <div>
+                            <input class="address" type="text" name="address" id="" value={{record_condition.address}}>
+                        </div>
+                    </div>
+                    <div class="button_area">
+                        <button type="submit">表示条件</button>
+                    </div>
+                </div>
+            </form>
+            <div class="table_header_area">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th class="number_col">会員番号</th>
+                            <th class="uname_col">ユーザー名</th>
+                            <th class="registerd_col">登録日</th>
+                            <th class="name_col">名前</th>
+                            <th class="birthday_col">生年月日</th>
+                            <th class="gender_col">性別</th>
+                            <th class="address_col">住所</th>
+                        </tr>
+                    </thead>
+    
+                </table>
+            </div>
+        </header>
+        <main>
+            <table border="1">
+                <tbody>
+                    {% for Record in Records %}
+                    <tr class="table_body">
+                        <td class="number_col">{{Record.number}}</td>
+                        <td class="uname_col">{{Record.uname}}</td>
+                        <td class="registerd_col">{{Record.registerd}}</td>
+                        <td class="name_col">{{Record.name}}</td>
+                        <td class="birthday_col">{{Record.birthday}}</td>
+                        <td class="gender_col">{{Record.gender}}</td>
+                        <td class="address_col">{{Record.address}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </main>
+    </div>
+</body>
+</html>

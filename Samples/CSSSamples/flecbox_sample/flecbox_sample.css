@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 90%;
+    width: 100%;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: space-between;
+    background-color: rgb(243, 232, 167);
+}
+
+.log {
+    height: 50px;
+    width: 50px;
+
+    background-color:rgb(203, 252, 203);
+}
+
+img {
+    height: 50px;
+}
+
+.link {
+    justify-content: flex-end;
+    background-color: rgb(240, 145, 219);
+}
+
+.link li {
+    list-style: none;
+
+}
+
+.link li:first-child {
+    margin-left: 10px;
+}
+
+.link li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.link li:last-child {
+    margin-right: 10px;
+}
+
+.link li a {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: rgb(61, 61, 211);
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+main {
+    height: calc(100% - 60px);
+    width: 100%;
+    background-color: rgb(212, 243, 182);
+}
+
+.section1 {
+    height: 10%;
+    width: 100%;
+    background-color: orange;
+}
+
+form {
+    height: 100%;
+}
+
+.inputs {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: yellow;
+}
+
+.inputs input {
+    height: 50%;
+    width: 200px;
+}
+
+.section2 {
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(238, 100, 215);
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: rgb(195, 238, 238);
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sidebar li {
+    height: 40px;
+    width: 150px;
+    list-style: none;
+    line-height: 40px;
+    background-color: purple;
+    color: lightyellow;
+
+}
+
+.contents {
+    height: 100%;
+    width: 85%;
+    background-color: #fff;
+}
+
+.sqr {
+    height: 50px;
+    width: 58px;
+    line-height: 50px;
+    background-color: rgb(233, 58, 5);
+}
+
+.leftside {
+    height: 20%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(243, 130, 253);
+}
+
+.leftside .sqr {
+    margin-left: 10px;
+}
+
+.center {
+    height: 60%;
+    width: 100%;
+    background-color: rgb(223, 236, 103);    
+}
+
+.topside {
+    height: 100%;
+    width: 20%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items:flex-start ;
+    background-color: rgb(243, 192, 192);
+}
+
+.topside .sqr {
+    margin-top: 10px;
+}
+
+.inner {
+    height: 100%;
+    width: 60%;
+    background-color: white;
+}
+
+.inner .sqr {
+    margin: 0px 10px;
+}
+
+.bottomside {
+    height: 100%;
+    width: 20%;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(243, 192, 192);
+}
+
+.bottomside .sqr {
+    margin-bottom: 10px;
+}
+
+
+.rightside {
+    height: 20%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(131, 240, 121);
+}
+
+.rightside .sqr {
+    margin-right: 10px;
+}
+
+.section3 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(221, 201, 164);
+}
+
+.around {
+    height: 80%;
+    width: 40%;
+    justify-content: space-around;
+    background-color: rgb(199, 168, 250);
+}
+
+.between {
+    height: 80%;
+    width: 40%;
+    justify-content: space-between;
+    background-color: rgb(199, 168, 250);
+}

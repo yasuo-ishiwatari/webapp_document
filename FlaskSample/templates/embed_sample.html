@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/embed_sample.css">
+    <title>埋め込みサンプル</title>
+</head>
+<body>
+    <header>
+        <p><a href="/">TOPへ戻る</a></p>
+        <p>以下サンプル画面です</p>
+    </header>
+    <main>
+        <div class="btn">
+            <form action="" method="GET">
+                <input type="submit" value="GET">
+            </form>
+            <form action="" method="POST">
+                <input type="submit" value="POST">
+            </form>
+        </div>
+
+        <div class="embed">
+            <div class="info">
+                {% if command=='P' %}
+                <p>POST Command</p>
+                {% else %}
+                <p>GET Command</p>
+                {% endif %}
+                <div class="msg">{{msg}}</div>
+            </div>
+            <div class="fruits">
+                <ul>
+                    {% for fruit in fruits %}
+                    <li>{{fruit}}</li>    
+                    {% endfor %}
+                </ul>
+            </div>    
+        </div>
+
+
+
+    
+</body>
+</html>

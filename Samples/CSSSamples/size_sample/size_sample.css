@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: rgb(228, 23, 23);
+    color: black;
+    opacity: 80%;
+}
+.content {
+    background-color: rgb(4, 70, 4);
+    color: white;    
+    opacity: 0.5;
+}
+
+.size {
+    height: 300px;
+    width: 500px;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.size2 {
+    height: 100px;
+    width: 500px;
+}
+
+.check1 {
+    background-color: red;
+    color: white;
+}
+
+.check2 {
+    background-color: green;
+    color: white;
+}
+
+.check3 {
+    background-color: blue;
+    color: white;
+}

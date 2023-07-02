@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/login_sample2.css">
+    <title>ログインサンプル</title>
+</head>
+<body>
+    <header>
+        <p><a href="/">TOPへ戻る</a></p>
+        <p>以下サンプル画面です</p>
+    </header>
+    <main>
+        <form method="POST" action="">
+            {{ form2.csrf_token }}
+            <div class="name form">
+                <div class="label">{{form2.name.label}}</div>
+                <div class="input">{{form2.name}}</div>
+            </div>
+            <div class="mail form">
+                <div class="label">{{form2.mail.label}}</div>
+                <div class="input">{{form2.mail}}</div>
+            </div>
+            <div class="password form">
+                <div class="label">{{form2.password.label}}</div>
+                <div class="input">{{form2.password}}</div>
+            </div>
+            <div class="btn">
+                {{ form2.submit}}
+            </div>
+
+         </form>
+
+    </main>   
+</body>
+</html>

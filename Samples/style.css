@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ----------------- ヘッダ ---------------------- */
+header {
+    height: 110px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    /* background-color: rgb(235, 148, 148); */
+
+}
+
+nav {
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+nav ul {
+    width: 300px;
+    margin: 0px 0px 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    background-color: rgb(99, 66, 5);
+    color: white;
+    line-height: 30px;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.title {
+    height: 30px;
+    width: 100%;
+}
+
+.title h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pagetitle {
+    height: 50px;
+    width: 100%;
+}
+
+.pagetitle h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 50px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* -------- メイン --------- */
+
+main {
+    height: 450px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1060px;
+    margin: 0px auto;
+    border: 2px solid #352a2a;
+    background-color: rgb(240, 245, 213);
+}
+
+.samplelinks {
+    height: 80%;
+    width: 80%;
+    margin: 10px 0px 0px 10px;
+    display: flex;
+}
+
+.html_sample {
+    margin-left: 10px;
+}
+
+.css_sample {
+    margin-left: 50px;
+}
+
+
+.js_sample {
+    margin-left: 50px;
+}
+
+.samplelinks ul li {
+    margin-bottom: 10px;
+}
+
+.samplelinks ul li a {
+    font-size: 20px;
+}

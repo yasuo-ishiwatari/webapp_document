@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    height: 250px;
+    width: 400px;
+    margin: 20px 0px 0px 50px;
+    background-color: #bbc7d1;
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form {
+    height: 40px;
+    width: 360px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+.label {
+    width: 150px;
+    /* background-color: aqua; */
+}
+
+label {
+    font-size: 20px;
+}
+
+.input {
+    width: 200px;
+    /* background-color: burlywood; */
+}
+
+input {
+    font-size: 20px;
+    width: 200px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.btn input {
+    width: 100px;
+    font-size: 16px;
+    border-radius: 20px;
+}

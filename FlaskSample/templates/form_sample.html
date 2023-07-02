@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/sample_common.css">
+    <link rel="stylesheet" href="../static/form_sample.css">
+    <title>フォ－ムサンプル</title>
+</head>
+<body>
+    <header>
+        <p><a href="/">TOPへ戻る</a></p>
+        <p>以下サンプル画面です</p>
+    </header>
+    <main>
+        <form action="" method="post">
+            <div class="input_area">
+                <div class="input_title">
+                    <h2>input タグサンプル</h2>
+                </div>
+                <div class="each_input">
+                    <label for="string_input">文字入力です</label>
+                    <input type="text" name="string_input" value={{form_values.string_input}}>
+                </div>
+                <div class="each_input">
+                    <label for="password_input">パスワード入力です</label>
+                    <input type="password" name="password_input" value={{form_values.password_input}}>
+                </div>
+                <div class="radioA_each_input">
+                    <div class="radio_area">
+                        {% if form_values.radioA_input=="A1" %}
+                        <input type="radio" name="radioA_input" id="radioA1" value="A1" checked>
+                        {% else %}
+                        <input type="radio" name="radioA_input" id="radioA1" value="A1">
+                        {% endif %}
+                        <label for="radioA1">ラジオボタンA-1</label>
+                    </div>                    
+                    <div class="radio_area">
+                        {% if form_values.radioA_input=="A2" %}
+                        <input type="radio" name="radioA_input" id="radioA2" value="A2" checked>
+                        {% else %}
+                        <input type="radio" name="radioA_input" id="radioA2" value="A2">
+                        {% endif %}
+                        <label for="radioA2">ラジオボタンA-2</label>
+                    </div>   
+                    <div class="radio_area">
+                        {% if form_values.radioA_input=="A3" %}
+                        <input type="radio" name="radioA_input" id="radioA3" value="A3" checked>
+                        {% else %}
+                        <input type="radio" name="radioA_input" id="radioA3" value="A3">
+                        {% endif %}
+                        <label for="radioA3">ラジオボタンA-3</label>
+                    </div>               
+                </div>
+                <div class="radioB_each_input">
+                    <div class="radio_area">
+                        {% if form_values.radioB_input=="B1" %}
+                        <input type="radio" name="radioB_input" id="radioB1" value="B1" checked>
+                        {% else %}
+                        <input type="radio" name="radioB_input" id="radioB1" value="B1">
+                        {% endif %}
+                        <label for="radioB1">ラジオボタンB-1</label>
+                    </div>                    
+                    <div class="radio_area">
+                        {% if form_values.radioB_input=="B2" %}
+                        <input type="radio" name="radioB_input" id="radioB2" value="B2" checked>
+                        {% else %}
+                        <input type="radio" name="radioB_input" id="radioB2" value="B2">
+                        {% endif %}
+                        <label for="radioB2">ラジオボタンB-2</label>
+                    </div>   
+                </div>
+                <div class="checkbox_each_input">
+                    {% if form_values.checkbox1_input=="on" %}
+                    <input type="checkbox" name="checkbox1" id="checkbox1" checked>
+                    {% else %}
+                    <input type="checkbox" name="checkbox1" id="checkbox1">
+                    {% endif %}
+                    <label for="checkbox1">チェックボックス1</label>
+                    {% if form_values.checkbox2_input=="on" %}
+                    <input type="checkbox" name="checkbox2" id="checkbox2" checked>
+                    {% else %}        
+                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                    {% endif %}
+                    <label for="checkbox2">チェックボックス2</label>      
+                </div>
+                 <div class="file_each_input">
+                    <input type="file" name="file_input">                
+                </div>
+                <div class="submit_each_input">
+                    <input type="submit" value="送信ボタン">        
+                </div>
+                <!-- <div class="image_each_input">
+                    <input type="image" src="../img/icons8.png" alt="送信ボタン">        
+                </div> -->
+                <div class="button_each_input">
+                    <a href="/"><input type="button" value="B"></a>        
+                </div>
+            </div>
+            <div class="input_area2">
+                <div class="input_title">
+                    <h2>input タグサンプル</h2>
+                </div>
+                <div class="date_each_input">
+                    <input type="date" name="date" id="date"
+                    value={{form_values.date}} min="1980-01-01" max="2020-12-31">
+                </div>                
+                <div class="email_each_input">
+                    <label for="email">e-mailアドレス</label>
+                    <input type="email" name="email" id="email" value={{form_values.email}}>
+                </div>           
+                <div class="number_each_input">
+                    <label for="number">数値入力:1-12</label>
+                    <input type="number" name="number" id="number" 
+                    min="1" max="12" value={{form_values.number}}>
+                </div>
+                <div class="range_each_input">
+                    <label for="range">範囲入力:0-100</label>
+                    <input type="range" name="range" id="range" 
+                    min="0" max="100" step="2" value={{form_values.range}}>
+                    <span class="range_value"></span>
+                </div>                      
+            </div>
+            <div class="other_form">
+                <div class="input_title">
+                    <h2>その他フォームタグサンプル</h2>
+                </div>                
+                <div class="text_area">
+                    <textarea name="textarea" cols="30" rows="10">テキスト入力</textarea>
+                </div>
+                <div class="select_area">
+                    <p>セレクトタグ</p>
+                    <select name="color_select" id="select_id">
+                        <option selected>{{form_values.select}}</option>
+                        {% for color in colors %}
+                        <option>{{color}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="select_area">
+                    <p>ページ変更</p>
+                    <select name="page_select" id="select_id2">
+                        <option selected>{{form_values.select2}}</option>
+                        {% for page in pages %}
+                        <option>{{page}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <!-- <div class="button_area">
+                    <button class="submit_btn" type="submit">送信ボタン</button>
+                    <button class="button_btn" type="button">汎用ボタン</button>
+                </div> -->
+            </div>
+        </form>    
+    </main>
+    <script>
+        const range = document.getElementById("range");
+        const range_value = document.querySelector(".range_value");
+        console.log(range.value);
+
+        window.onload = function() {
+            range_value.textContent = range.value;
+        }
+        
+        function range_value_change(event) {
+            range_value.textContent = range.value
+        }
+ 
+        range.addEventListener('input',range_value_change)
+
+    </script>
+
+
+
+    
+</body>
+</html>

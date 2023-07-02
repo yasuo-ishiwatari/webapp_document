@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 500px;
+    width: 600px;
+    border: 5px solid #000;
+    margin: 50px auto 0px 100px;
+    position: relative;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    position: absolute;
+}
+
+.btn1 {
+    top: 50px;
+    left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn1:hover {
+    color: #ccc;
+    background-color: #333;
+
+}
+
+.btn2 {
+    top: 50px;
+    left: 200px;
+    font-size: large;
+    border-style: inset;
+    border: 5px solid purple;
+    background-color: rgb(181, 126, 233);
+    cursor: pointer;
+}
+
+.btn2:hover {
+    border-color: rgb(31, 31, 3);
+    background-color: yellow;
+}
+
+input {
+    height: 50px;
+    width: 120px;
+    position: absolute;
+}
+
+.btn3 {
+    top: 150px;
+    left: 50px;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(89, 175, 233);
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.btn3:hover {
+    background-color: yellow;
+    color: #000;
+}
+
+.btn4 {
+    top: 150px;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+    background:linear-gradient(45deg,red,orange);
+    border: 3px solid #000;
+    transition: 0.3s;
+}
+
+.btn4:hover{
+    transform: scale(1.1);
+    background: yellow;
+}
+
+.btn5 {
+    top: 150px;
+    left: 350px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border-style: groove;
+    border-width: 20px;
+    border-color: green;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.btn5:hover {
+    border-style:ridge ;
+}
+
+main a {
+    text-decoration: none;
+    position: absolute;
+}
+
+.btn6 {
+    top: 300px;
+    left: 50px;
+    padding: 5px 20px;
+    border: 1px solid #000;
+    background-color: yellow;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn6:hover{
+    border-width: 5px;
+    border-color: brown;
+}
+
+.btn7 {
+    top: 300px;
+    left: 200px;
+    padding: 5px 20px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background-color: brown;
+    border-width: 5px;
+    color: #eee;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+.btn7:hover {
+    box-shadow: 10px 5px 5px orangered;
+}

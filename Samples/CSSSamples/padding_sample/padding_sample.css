@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: rgb(228, 23, 23);
+    color: black;
+    height: 50px;
+    width: 250px;
+}
+
+.padding {
+    background-color: rgb(4, 70, 4);
+    color: white;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.boxsizing {
+    background-color: blue; color: white;
+    box-sizing: border-box;
+}
+
+.container2 {
+    height: 50px; width: 500px;
+}
+
+.content {
+    background-color: red;
+    color: white;    
+}
+.padding2 {
+    background-color: green;
+    padding: 10px 20px;
+}
+
+hr {
+    margin-bottom: 50px;
+}

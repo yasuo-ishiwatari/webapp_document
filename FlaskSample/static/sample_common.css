@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    border: 1px solid #2b1c01;
+    background-color: #f5e58b;
+    margin-bottom: 10px;
+}
+
+header a {
+    color: purple;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
